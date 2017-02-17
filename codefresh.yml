@@ -12,7 +12,7 @@ steps:
      composition_candidates:
        utilities:
          image: sctechdev/hawthorne-utils:latest
-         command: grunt.py -t ci -c "${{CF_COMMIT_MESSAGE}}" -u "${{CF_COMMIT_AUTHOR}}" -r "${{RALLY_KEY}}"
+         command: 'grunt.py -t ci -c "${{CF_COMMIT_MESSAGE}}" -u "${{CF_COMMIT_AUTHOR}}" -r "${{RALLY_KEY}}"'
      fail_fast: true
    push_image:
       type: push
